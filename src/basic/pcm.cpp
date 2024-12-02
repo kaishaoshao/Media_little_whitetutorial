@@ -50,7 +50,7 @@ int Split_pcm16le(const char *url){
 }
 
 //===----------------------------------------------------------------------===//
-/// @brief 
+/// @brief Halve volume of Left channel of 16LE PCM file
 //
 /// @param  url The path to the input PCM audio file. 
 /// @return 0/-1
@@ -86,7 +86,7 @@ int Halfvolume_pcm16le(const char *url){
 }
 
 //===----------------------------------------------------------------------===//
-/// @brief 
+/// @brief Re-sample to double the speed of 16LE PCM file
 //
 /// @param  url The path to the input PCM audio file. 
 /// @return 0/-1
@@ -122,13 +122,13 @@ int Doublespeed_pcm16le(const char *url){
 int main(int argc,char **argv)
 {
     // 分离PCM16LE双声道采样数据的左声道和右声道
-    Split_pcm16le("../../res/basic/audio/NocturneNo2inEflat_44.1k_s16le.pcm");
+    // Split_pcm16le("../../res/basic/audio/NocturneNo2inEflat_44.1k_s16le.pcm");
     // 将PCM16LE双声道音频采样数据中左声道的音量降一半
-
+    // Halfvolume_pcm16le("../../output/basic/audio/output_left.pcm");
     // 将PCM16LE双声道音频采样数据的声音速度提高一倍
-
+    // Doublespeed_pcm16le("../../output/basic/audio/output_left.pcm");
     // 将PCM16LE单声道音频采样数据转换为PCM8音频采样数据
-
+    
     // 从PCM16LE单声道音频采样数据中截取一部分数据
 
     // 将PCM16LE双声道音频采样数据转换为WAVE格式音频数据
